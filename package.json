@@ -4,6 +4,7 @@
 	"description": "A database based around streams (Using Scuttlebutt)",
 	"author": "Drew Young",
 	"main": "./lib/index",
+	"repository": { "type": "git", "url": "http://github.com/drewyoung1/stream-db.git" },
 	"dependencies": {
 		"hat": "~0.0.3",
 		"scuttlebutt": "~5.0.0"
