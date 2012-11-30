@@ -1,0 +1,10 @@
+{
+	"name": "stream-db",
+	"version": "0.1.0",
+	"author": "Drew Young",
+	"main": "./lib/index",
+	"dependencies": {
+		"hat": "~0.0.3",
+		"scuttlebutt": "~5.0.0"
+	}
+}
