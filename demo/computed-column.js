@@ -14,7 +14,7 @@ var DB = require('../');
 
 var db = new DB('people');
 
-mux(db.column('firstName').createReadStream(), db.column('lastName').createReadStream()).pipe(through(function(data) {
+demux(db.column('firstName').createReadStream(), db.column('lastName').createReadStream()).pipe(through(function(data) {
 	try {
 		data = JSON.parse(data);
 	} catch(e) {
@@ -40,7 +40,7 @@ var row = db.add({
 
 process.nextTick(function() { console.log(row.get()); });
 
-function mux() {
+function demux() {
 	var ts = through();
 
 	[].forEach.call(arguments, function(ws) {
