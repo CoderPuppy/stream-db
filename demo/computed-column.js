@@ -14,7 +14,7 @@ var scuttlebutt = require('scuttlebutt-stream');
 
 var test = require('../test');
 
-var r    = require('../test/interact');
+var r = require('../test/interact');
 
 r.context.db  = test.db1;
 r.context.row = test.row1;
