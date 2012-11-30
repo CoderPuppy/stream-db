@@ -1,6 +1,6 @@
 {
 	"name": "stream-db",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A database based around streams (Using Scuttlebutt)",
 	"author": "Drew Young",
 	"main": "./lib/index",
