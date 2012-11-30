@@ -46,6 +46,9 @@ Gets or creates a cell for the given row.
 ### Column#set(index, value)
 Sets the row at index to the given value.
 
+### Column#set([ value... ])
+Sets the all the rows to the given values.
+
 ### Column#get(index)
 Gets the value for the row at index.
 
