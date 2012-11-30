@@ -9,6 +9,7 @@
 // r.context.es      = require('event-stream');
 
 var through = require('through');
+var demux   = require('demux');
 
 var DB = require('../');
 
@@ -39,13 +40,3 @@ var row = db.add({
 });
 
 process.nextTick(function() { console.log(row.get()); });
-
-function demux() {
-	var ts = through();
-
-	[].forEach.call(arguments, function(ws) {
-		ws.pipe(ts);
-	});
-
-	return ts;
-}
