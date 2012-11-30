@@ -2,6 +2,7 @@
 	"name": "stream-db",
 	"version": "0.2.1",
 	"description": "A database based around streams (Using Scuttlebutt)",
+	"keywords": [ "db", "database", "streams" ],
 	"author": "Drew Young",
 	"main": "./lib/index",
 	"repository": { "type": "git", "url": "http://github.com/drewyoung1/stream-db.git" },
